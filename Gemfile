@@ -6,3 +6,12 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", "~> 13.0"
+
+group :development do
+  gem "rubocop", require: false  # Ruby linter
+end
+gem "pry"          # For better console/debugging
+
+group :test do
+  gem "rspec"        # If not already added in gemspec
+end
